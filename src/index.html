@@ -33,7 +33,9 @@
       <div class="container">
           <div class="row">
               <div class="col-sm-12 text-center">                            
-                  <p class="copyright mb-0 py-4">© 2019. Design By Mannat-Theme</p>
+                  <p class="copyright mb-0 py-4">
+                        © 2022 Michael Juwon. All rights reserved.
+                  </p>
               </div><!--end col-->
           </div><!--end row-->
       </div> <!--end container-->               
@@ -57,7 +59,59 @@
 
 
     <!-- App js -->
-    <script src="./assets/js/app.js"></script>  
+    <script src="./assets/js/app.js"></script> 
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // ripple effect
+            $('#profile_ripple').ripples({
+                resolution: 500,
+                dropRadius: 20,
+                perturbance: 0.04
+            });
+
+            $('.mfp-image').magnificPopup({
+                type: 'image',
+                closeOnContentClick: true,
+                mainClass: 'mfp-fade',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1]
+                        // Will preload 0 - before current, and 1 after the current image 
+                }
+            });
+
+            //PORTFOLIO FILTER 
+            var $container = $('.projects-wrapper');
+            var $filter = $('#filter');
+            // Initialize isotope 
+            $container.isotope({
+                filter: '*',
+                layoutMode: 'masonry',
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear'
+                }
+            });
+            // Filter items when filter link is clicked
+            $filter.find('a').click(function() {
+                var selector = $(this).attr('data-filter');
+                $filter.find('a').removeClass('active');
+                $(this).addClass('active');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        animationDuration: 750,
+                        easing: 'linear',
+                        queue: false,
+                    }
+                });
+                return false;
+            });
+            /*END*/
+        });
+    </script>
         
     </body>
 </html>
