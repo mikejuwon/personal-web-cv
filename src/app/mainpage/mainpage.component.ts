@@ -15,4 +15,8 @@ export class MainpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  printPage() {
+    window.print();
+  }
+
 }
