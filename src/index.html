@@ -110,6 +110,19 @@
                 return false;
             });
             /*END*/
+
+            // Download CV
+            $('#download_cv').click(function() {
+                // save the file locally
+                var a = document.createElement("a");
+                document.body.appendChild(a);
+                a.style = "display: none";
+
+                var blob = new Blob([document.getElementById('cv_content').innerHTML], {
+                    type: "octet/stream"
+                });
+                var url = window.URL.createObjectURL(blob);
+            });
         });
     </script>
         
