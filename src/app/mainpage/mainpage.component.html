@@ -1,6 +1,6 @@
 <div class="main-wraper">
 
-    <section class="section bg-profile" id="profile_ripple">
+    <section class="section bg-profile no-printing" id="profile_ripple">
         <div class="zoo-profile">
             <div class="container">                   
                 <div class="row">
@@ -9,7 +9,7 @@
                             <div class="zoo-profile-main-pic">
                                 <img src="../../assets/images/my-profile-pic.jpg" alt="" class="rounded-circle" width="120" height="120">
                                 <span class="zoo-user-chat">
-                                    <i class="uil uil-comment-dots"></i>
+                                    <i class="uil uil-medium-m"></i>
                                 </span>
                             </div><!--end zoo-profile-main-pic-->
                             <div class="zoo-profile_user-detail">
@@ -65,6 +65,59 @@
         </div><!--end zoo-profile-->
     </section><!--end section-->
 
+
+    <section class="section bg-profile profile-printing" id="profile_ripple">
+        <div class="zoo-profile">
+            <div class="container">                   
+                <div class="row">
+                    <div class="col-sm-6 col-print-6 align-self-center mb-3 mb-lg-0">
+                        <div class="zoo-profile-main">
+                            <div class="zoo-profile-main-pic">
+                                <img src="../../assets/images/my-profile-pic.jpg" alt="" class="rounded-circle" width="120" height="120">
+                                <span class="zoo-user-chat">
+                                    <i class="uil uil-medium-m"></i>
+                                </span>
+                            </div><!--end zoo-profile-main-pic-->
+                            <div class="zoo-profile_user-detail">
+                                <h5 class="zoo-user-name">Michael Olujuwon</h5>                                                        
+                                <p class="cd-headline loading-bar">
+                                    <span class="cd-words-wrapper">
+                                        <b class="is-visible">Full Stack Developer</b>
+                                    </span>
+                                </p>
+                            </div><!--end zoo-profile_user-detail-->
+                        </div> <!--end profile-main-pic-->                                               
+                    </div><!--end col-->
+                    <div class="col-sm-4 col-print-4 ml-auto">
+                        <ul class="list-unstyled personal-detail">
+                            <li><i class="'uil uil-phone-volume mr-2"></i> <b> phone </b> : +2348038426058</li>
+                            <li class="mt-2"><i class="uil uil-envelope mt-2 mr-2"></i> <b> Email </b> : mikejuwon737@gmail.com</li>
+                            <li class="mt-2"><i class="uil uil-map-marker mt-2 mr-2"></i> <b> Location </b> : Nigeria</li>
+                        </ul><!--end personal-detail-->
+                        <ul class="list-inline social-icon mb-0">
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/michael-olujuwon-0b1b3b1a3/" class="bg-blue">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.github.com/mikejuwon" class="bg-blue">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <!-- skype -->
+                            <li class="list-inline-item">
+                                <a href="https://www.skype.com/en" class="bg-blue">
+                                    <i class="fa-brands fa-skype"></i>
+                                </a>
+                            </li>
+                        </ul><!--end social-icon-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->  
+        </div><!--end zoo-profile-->
+    </section><!--end section-->
+
     <section class="section-md">
         <div class="container">
             <div class="row">
@@ -77,7 +130,7 @@
                     <p>
                         I'm a Full Stack Developer with a passion for building scalable and maintainable web applications. I have a strong background in building web applications with Node.js (Express.js), React.js, Next.js, Angular, React Native, Flutter, Springboot, Apollo-Server and working with MongoDB, MySQL, PostgreSQL, GraphQL. I'm also a strong advocate of Test Driven Development (TDD) and I'm always looking for ways to improve my code quality and efficiency.
                     </p>
-                    <button type="button" class="btn btn-sm btn-soft-primary" (click)="printPage()">Print &amp; Download CV</button>
+                    <button type="button" class="btn btn-sm btn-primary bg-blue" (click)="printPage()">Print &amp; Download CV</button>
                 </div><!--end col-->
                 <div class="col-sm-5 col-print-5 offset-lg-1 align-self-center">
                     <p>
@@ -332,21 +385,27 @@
     <section class="section-md my-clients">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-6 mb-2">
                     <img src="../../assets/images/brand/nodejs-icon.png" alt="" width="75" height="80">
                 </div><!--end col-->
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-6 mb-2">
                     <img src="../../assets/images/brand/angular-icon.png" alt="" width="75" height="80">
                 </div><!--end col-->
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-6 mb-2">
                     <img src="../../assets/images/brand/react-icon.png" alt="" width="75" height="70">
                 </div><!--end col-->
-                <div class="col-md-2 col-6">
+                <div class="col-md-2 col-6 mb-2">
+                    <img src="../../assets/images/brand/react-native-icon.png" alt="" width="75" height="70">
+                </div><!--end col-->
+                <div class="col-md-2 col-6 mb-2">
+                    <img src="../../assets/images/brand/springboot-logo.png" alt="" width="75" height="70">
+                </div><!--end col-->
+                <div class="col-md-2 col-6 mb-2">
                     <img src="../../assets/images/brand/next.png" alt="" width="75" height="70">
                 </div> <!--end col-->       
-                <div class="col-md-2 col-6">
+                <!-- <div class="col-md-2 col-6">
                     <img src="../../assets/images/brand/1.png" alt="" width="150" height="80">
-                </div><!--end col-->
+                </div> -->
             </div><!--end row-->  
         </div><!--end container--> 
     </section><!--end section-->
@@ -427,7 +486,9 @@
         <div class="container">                    
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center">Thank you !</h3>
+                    <h3 class="text-center">
+                        Thanks for visiting my portfolio.
+                    </h3>
                 </div> <!--end col-->
             </div><!--end row-->
         </div><!--end container-->

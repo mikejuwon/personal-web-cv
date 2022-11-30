@@ -1376,6 +1376,10 @@ a:hover, a:active, a:focus {
   display: none;
 }
 
+.profile-printing{
+  display: none;
+}
+
 .footer-area {
   background-color: #20294a;
 }
@@ -1421,11 +1425,16 @@ a:hover, a:active, a:focus {
   .thanks-text {
     display: block;
   }
+  .profile-printing{
+    display: block;
+  }
   .thanks-text h2 {
     font-size: 30px;
     color: #4d79f6;
     margin-bottom: 20px;
   }
+  .btn,
+  .no-printing,
   .my-work,
   .bg-funfact,
   .my-clients,
